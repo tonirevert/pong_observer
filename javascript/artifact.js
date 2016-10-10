@@ -52,7 +52,9 @@ Artifact.prototype.locate = function(x,y){
 
     this.imgObj.style.left = (Math.round(x))+ 'px';
     this.imgObj.style.top = (Math.round(y)) + 'px';
+
     this.notify(this.imgObj.style);//Added this notify
+
 
  }; //End locate method
 

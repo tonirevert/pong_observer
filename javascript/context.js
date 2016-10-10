@@ -38,8 +38,10 @@ function Context(){
         console.log("++++++++++++++++++++++++++++++++++++");
         this.state = "stop";
         clearTimeout(animate);
-        console.log(this.state);
-      }
+      }/*else if (ball_x <= 0) {
+        clearTimeout(animate);
+        this.state = "stop";
+      }*/
   };
 
 
@@ -49,6 +51,7 @@ function Context(){
 Context.prototype.start = function(){
     this.state = "run";
     this.ball.start();
+
 };
 
 Context.prototype.stop = function(){
